@@ -4,74 +4,89 @@
     <meta charset="UTF-8">
     <title>Fit Club</title>
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Oswald:300,400" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 <nav>
     <div class="container">
-        <p>LOGO</p>
+        <p class="logo">Health <span>&</span> Fitness</p>
         <ul class="menu">
-            <li>Element 1</li>
-            <li>Element 2</li>
-            <li>Element 3</li>
-            <li>Element 4</li>
-            <li>Element 5</li>
+            <li>Our Coaches</li>
+            <li>Nutrition</li>
+            <li>Pricing</li>
+            <li>Get Motivated</li>
+            <li>Contact</li>
         </ul>
     </div>
 </nav>
 <header class="paralax">
-    <h1>TITLE</h1>
-    <p>Subtitle</p>
+    <img src="./images/logo.svg" alt="logo">
 </header>
 <section class="products">
+        <p class="section-header">OUR COACHES</p>
     <div class="container">
         <div class="product">
-            <p>Image</p>
-            <h2>Name</h2>
+            <div class="image"><img src="./images/coach1.jpg"></div>
+            <h2>MARCUS</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus aliquid architecto cumque dolorem corporis at consequatur facere, repellat beatae neque, quibusdam eaque necessitatibus obcaecati, autem vel blanditiis eius dolores officia!</p>
-            <button>CLICK</button>
+            <span>Read more...</span>
         </div>
         <div class="product">
-                <p>Image</p>
-                <h2>Name</h2>
+                <div class="image"><img src="./images/coach2.jpg"></div>
+                <h2>JENIFER</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus aliquid architecto cumque dolorem corporis at consequatur facere, repellat beatae neque, quibusdam eaque necessitatibus obcaecati, autem vel blanditiis eius dolores officia!</p>
-                <button>CLICK</button>
+                <span>Read more...</span>
         </div>
         <div class="product">
-                <p>Image</p>
-                <h2>Name</h2>
+                <div class="image"><img src="./images/coach3.jpg"></div>
+                <h2>CHRISTOPHER</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus aliquid architecto cumque dolorem corporis at consequatur facere, repellat beatae neque, quibusdam eaque necessitatibus obcaecati, autem vel blanditiis eius dolores officia!</p>
-                <button>CLICK</button>
+                <span>Read more...</span>
         </div>
     </div>
 </section>
 <section class="slider">
-    <h1>SLIDER</h1>
+    <ul class="slides">
+        <li class="slide"><img src="./images/img_12.jpg"></li>
+        <li class="slide"><img src="./images/img_10.jpg"></li>
+        <li class="slide"><img src="./images/img_5.jpg"></li>
+        <li class="slide"><img src="./images/img_3.jpg"></li>
+        <li class="slide"><img src="./images/img_12.jpg"></li>
+    </ul>
+    <div class="slider-controls">
+        <ul class="dots">
+            <li class="dot"></li>
+            <li class="dot"></li>
+            <li class="dot"></li>
+            <li class="dot"></li>
+        </ul>
+    </div>
 </section>
 <section class="articles">
+    <p class="section-header">OUR PRODUCTS</p>
     <div class="container">
         <div class="article">
-                <h2>Name</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus aliquid architecto cumque dolorem corporis at consequatur facere, repellat beatae neque, quibusdam eaque necessitatibus obcaecati, autem vel blanditiis eius dolores officia!</p>
-                <button>CLICK</button>
+                <img class="icon" src="../images/icon-01.png">
+                <h2>Cardio</h2>
+                <p>Cardio exercise is one of the most important things you can do for your body, whether you want to lose weight, burn fat, or generally improve your health. You can use machines like a treadmill or an elliptical trainer, or you can create your own workout at home with a variety of cardio exercises like jogging in place, jumping jacks, or burpees. Anything that gets your heart rate into your target heart rate zone will work, but there are some workouts that give you a little more bang for your buck.</p>
+                <span>Read more...</span>
         </div>
         <div class="article">
-                <h2>Name</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus aliquid architecto cumque dolorem corporis at consequatur facere, repellat beatae neque, quibusdam eaque necessitatibus obcaecati, autem vel blanditiis eius dolores officia!</p>
-                <button>CLICK</button>
+                <img class="icon" src="../images/icon-02.png">
+                <h2>Strenght</h2>
+                <p>When properly performed, strength training can provide significant functional benefits and improvement in overall health and well-being, including increased bone, muscle, tendon, and ligament strength and toughness, increased fitness and improved cardiac function. Training commonly uses the technique of progressively increasing the force output of the muscle through incremental weight increases and uses a variety of exercises to target specific muscle groups.</p>
+                <span>Read more...</span>
         </div>
         <div class="article">
-                <h2>Name</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus aliquid architecto cumque dolorem corporis at consequatur facere, repellat beatae neque, quibusdam eaque necessitatibus obcaecati, autem vel blanditiis eius dolores officia!</p>
-                <button>CLICK</button>
-        </div>
-        <div class="article">
-                <p>Image</p>
-                <h2>Name</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus aliquid architecto cumque dolorem corporis at consequatur facere, repellat beatae neque, quibusdam eaque necessitatibus obcaecati, autem vel blanditiis eius dolores officia!</p>
-                <button>CLICK</button>
+                <img class="icon" src="../images/icon-04.png">
+                <h2>Personal Coach</h2>
+                <p>What are personal coaching services? The purpose of working with a personal coach is to maximize your potential. A personal coach will work with you 1:1 to identify your specific goals, strengths and opportunity areas. As you develop a relationship with your coach, they gain a deeper understanding of what works best for you. As a result, your personal coach can provide you with proven strategies and customized plans to help you get the results you’re after. </p>
+                <span>Read more...</span>
         </div>
     </div>
 </section>
+<script src="./app.js"></script>
 </body>
 </html>
 
