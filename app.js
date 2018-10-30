@@ -7,14 +7,14 @@ $(function() {
 
     function startSlider(){
         interval = setInterval(function () {
-             $(slides).animate({'margin-left':'-=100vw'}, 1000, function () {
+             $(slides).animate({'margin-left':'-=100vw'}, 1500, function () {
                  index++;
                  if(index === slide.length){
                      index = 1;
                      $(slides).css({'margin-left':'0'});
                  }
              });
-         },4000);
+         },3500);
     }
  
     function stopSlider() {
