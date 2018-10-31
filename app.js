@@ -4,6 +4,8 @@ $(function() {
     let slider = $(".slider");
     let slides = $(".slides");
     let slide = $(".slide");
+    let controls = $(".dot");
+    $(controls[0]).addClass("dot-active");
 
     function startSlider(){
         interval = setInterval(function () {
@@ -12,6 +14,26 @@ $(function() {
                  if(index === slide.length){
                      index = 1;
                      $(slides).css({'margin-left':'0'});
+                 }
+                 if(index == 1){
+                    $(controls[0]).addClass("dot-active");
+                    $(controls[1]).removeClass("dot-active");
+                    $(controls[2]).removeClass("dot-active");
+                 }
+                 if(index == 2){
+                    $(controls[1]).addClass("dot-active");
+                    $(controls[0]).removeClass("dot-active");
+                    $(controls[2]).removeClass("dot-active");
+                 }
+                 if(index == 3){
+                    $(controls[2]).addClass("dot-active");
+                    $(controls[0]).removeClass("dot-active");
+                    $(controls[1]).removeClass("dot-active");
+                 }
+                 if(index == 4){
+                    $(controls[0]).addClass("dot-active");
+                    $(controls[1]).removeClass("dot-active");
+                    $(controls[2]).removeClass("dot-active");
                  }
              });
          },3500);
@@ -24,6 +46,28 @@ $(function() {
     $(slider).on('mouseenter', stopSlider);
     $(slider).on('mouseleave', startSlider);
     startSlider();
+
+//------------SLIDER CONTROLS
+    
+        $(controls[0]).on("click", function(){
+            $(slides).animate({'margin-left':'0vw'}, 1500);
+            $(this).addClass("dot-active");
+            $(controls[1]).removeClass("dot-active");
+            $(controls[2]).removeClass("dot-active");
+        });
+        $(controls[1]).on("click", function(){
+            $(slides).animate({'margin-left':'-100vw'}, 1500);
+            $(this).addClass("dot-active");
+            $(controls[0]).removeClass("dot-active");
+            $(controls[2]).removeClass("dot-active");
+        });
+        $(controls[2]).on("click", function(){
+            $(slides).animate({'margin-left':'-200vw'}, 1500);
+            $(this).addClass("dot-active");
+            $(controls[0]).removeClass("dot-active");
+            $(controls[1]).removeClass("dot-active");
+        });
+
 //------------PARALAX
     let header = $(".paralax");
     let products = $(".articles .container");
