@@ -75,12 +75,20 @@ $(function() {
         let scroll = $(window).scrollTop();
         let margin = -250 + (scroll*0.6);
         $(header).css({"background-position-y" : margin});
-
-        if(scroll > 1500){
-            $(products).css({"top": "160px"});
+        if(window.innerWidth > 1004 ){
+            if(scroll > 1500){
+                $(products).css({"top": "160px"});
+            }else{
+                $(products).css({"top": "800px"});
+            }
         }else{
-            $(products).css({"top": "800px"});
+            if(scroll > 1100){
+                $(products).css({"top": "160px"});
+            }else{
+                $(products).css({"top": "800px"});
+            }
         }
+        
     });
 
     
