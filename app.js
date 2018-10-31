@@ -74,7 +74,6 @@ $(function() {
     $(window).on("scroll", function(){
         let scroll = $(window).scrollTop();
         let margin = -250 + (scroll*0.6);
-
         $(header).css({"background-position-y" : margin});
 
         if(scroll > 1500){
