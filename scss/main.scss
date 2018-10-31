@@ -1733,5 +1733,71 @@
     }
 }
 
+@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px){
+    .container{
+        display:none;
+        width:100vw;
+        margin:0 auto;
+    }
+
+    nav{
+        display:none;
+    }
+
+    header.paralax{
+        display:none;
+    }
+
+    section.products{
+        display:none;
+    }
+
+    section.slider{
+        display:none;
+    }
+
+    section.articles{
+        display:none;
+    }
+
+    section.banner{
+        width:100vw;
+        height:100vh;
+        padding-top:5vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-image: url("../images/img_15.jpg");
+        background-size:cover;
+        background-position:center;
+        h3{
+            font-family: 'Oswald', sans-serif;
+            font-size:10vw;
+            color:white;
+            span{
+                font-family: 'Oswald', sans-serif;
+                color: #00ccff;
+            }
+        }
+        p{
+            margin:20px;
+            width:80vw;
+            font-size: 4vw;
+            text-align: center;
+            color:white;
+        }
+    }
+
+    section.contact{
+        display:none;
+    }
+    footer{
+        display:none;
+    }
+}
+
 
  
